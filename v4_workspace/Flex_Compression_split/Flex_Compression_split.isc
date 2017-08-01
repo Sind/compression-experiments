@@ -1,0 +1,135 @@
+#ISD afv6
+# ISD version: 4.17.3.201706221144-716
+
+# Application configuration
+stackId: rail
+stackRoot: /home/srodk/Apps/SimplicityStudio_v4/developer/stacks/rail/v1.3.1.0
+appId: rail
+frameworkRoot: .
+architecture: efr32~family[F]~series[1]~device_configuration[1]~performance[P]~radio[132]~flash[256K]~temp[G]~package[M]~pins[48]+BRD4252A+gcc
+deviceName: rail
+generationDirectory: PATH(ISC_RELATIVE):.
+
+# Devices
+device: EFR32
+
+# Plugin configuration
+appPlugin: buffer-pool-memory-manager=false
+appPlugin: circular-queue=false
+appPlugin: command-interpreter=false
+appPlugin: hal-efr32=true
+appPlugin: lcd-graphics=false
+appPlugin: rail-lib=true
+appPlugin: railtest-base=false
+appPlugin: rangetest-base=false
+appPlugin: response-printf=false
+
+# Setup configurations
+{setupId:additionalFiles
+}
+{setupId:boardHeader
+allowMissingHeader:false
+useHeaderInPlace:false
+}
+{setupId:callbackConfiguration
+RAILCb_TxPacketSent:true
+RAILCb_BeginWriteMemory:true
+RAILCb_AllocateMemory:true
+RAILCb_RxRadioStatus:true
+RAILCb_TxRadioStatus:true
+RAILCb_RxPacketReceived:true
+}
+{setupId:efr32RadioConfig
+AGC_PERIOD=int:0
+AGC_SETTLING_DELAY=int:34
+AGC_SPEED=serializableObject:EnumDataItem:1
+ASYNCHRONOUS_RX_ENABLE=bool:false
+BASE_FREQUENCY_HZ=long:2450000000
+BAUDRATE_TOL_PPM=int:0
+BITRATE=int:1000000
+CHANNEL_SPACING_HZ=int:1000000
+CONFIGURATOR_VERSION=string:2.6.0
+CRC_BIT_ENDIAN=serializableObject:EnumDataItem:1
+CRC_BYTE_ENDIAN=serializableObject:EnumDataItem:0
+CRC_INPUT_ORDER=serializableObject:EnumDataItem:0
+CRC_INVERT=bool:false
+CRC_PAD_INPUT=bool:false
+CRC_POLY=serializableObject:EnumDataItem:2
+CRC_SEED=long:0
+DEVIATION=int:500000
+DIFF_ENCODING_MODE=serializableObject:EnumDataItem:0
+DSSS_CHIPPING_CODE=long:0
+DSSS_LEN=int:0
+DSSS_SPREADING_FACTOR=int:0
+FEC_EN=serializableObject:EnumDataItem:0
+FIXED_LENGTH_SIZE=int:64
+FRAME_BITENDIAN=serializableObject:EnumDataItem:0
+FRAME_CODING=serializableObject:EnumDataItem:0
+FRAME_LENGTH_TYPE=serializableObject:EnumDataItem:1
+FRAME_TYPE_0_LENGTH=int:0
+FRAME_TYPE_0_VALID=bool:false
+FRAME_TYPE_1_LENGTH=int:0
+FRAME_TYPE_1_VALID=bool:false
+FRAME_TYPE_2_LENGTH=int:0
+FRAME_TYPE_2_VALID=bool:false
+FRAME_TYPE_3_LENGTH=int:0
+FRAME_TYPE_3_VALID=bool:false
+FRAME_TYPE_4_LENGTH=int:0
+FRAME_TYPE_4_VALID=bool:false
+FRAME_TYPE_5_LENGTH=int:0
+FRAME_TYPE_5_VALID=bool:false
+FRAME_TYPE_6_LENGTH=int:0
+FRAME_TYPE_6_VALID=bool:false
+FRAME_TYPE_7_LENGTH=int:0
+FRAME_TYPE_7_VALID=bool:false
+FRAME_TYPE_BITS=int:0
+FRAME_TYPE_LOC=int:0
+FRAME_TYPE_LSBIT=int:0
+FREQ_OFFSET_HZ=int:4000
+FSK_SYMBOL_MAP=serializableObject:EnumDataItem:0
+HEADER_CALC_CRC=bool:false
+HEADER_EN=bool:true
+HEADER_SIZE=int:1
+HEADER_WHITE_EN=bool:false
+MANCHESTER_MAPPING=serializableObject:EnumDataItem:0
+MODULATION_TYPE=serializableObject:EnumDataItem:0
+PAYLOAD_CRC_EN=bool:true
+PAYLOAD_WHITE_EN=bool:false
+PHY=serializableObject:Efr32RadioConfiguratorPhy:null:null:Custom_settings
+PREAMBLE_LENGTH=int:40
+PREAMBLE_PATTERN=int:1
+PREAMBLE_PATTERN_LEN=int:2
+PROFILE=serializableObject:Efr32RadioConfiguratorProfile:DUMBO:Base
+RX_XTAL_ERROR_PPM=int:200
+SHAPING_FILTER=serializableObject:EnumDataItem:1
+SHAPING_FILTER_PARAM=float:0.5
+SYMBOLS_IN_TIMING_WINDOW=int:14
+SYMBOL_ENCODING=serializableObject:EnumDataItem:0
+SYNCWORD_0=long:63117
+SYNCWORD_1=long:0
+SYNCWORD_LENGTH=int:16
+SYNCWORD_TX_SKIP=bool:false
+TEST_BER=bool:false
+TEST_PER=bool:false
+TIMING_DETECTION_THRESHOLD=int:12
+TIMING_SAMPLE_THRESHOLD=int:8
+TX_XTAL_ERROR_PPM=int:0
+VAR_LENGTH_ADJUST=int:0
+VAR_LENGTH_BITENDIAN=serializableObject:EnumDataItem:0
+VAR_LENGTH_BYTEENDIAN=serializableObject:EnumDataItem:0
+VAR_LENGTH_INCLUDECRC=bool:false
+VAR_LENGTH_MAXLENGTH=int:255
+VAR_LENGTH_MINLENGTH=int:0
+VAR_LENGTH_NUMBITS=int:8
+VAR_LENGTH_SHIFT=int:0
+WHITE_OUTPUT_BIT=int:0
+WHITE_POLY=serializableObject:EnumDataItem:0
+WHITE_SEED=int:0
+XTAL_FREQUENCY_HZ=int:38400000
+}
+{setupId:information
+}
+{setupId:macros
+}
+
+# Plugin options

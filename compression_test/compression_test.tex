@@ -1,0 +1,738 @@
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.000000 \\
+	256 & 1.000000 \\
+	128 & 1.000000 \\
+	64 & 1.000000 \\
+	32 & 1.000000 \\
+	16 & 1.000000 \\
+	8 & 1.000000 \\
+	4 & 1.000000 \\
+	2 & 1.000000 \\
+}\compressionhumiditynone
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditynonetrans{\compressionhumiditynone}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumiditynonetrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.670473 \\
+	256 & 1.538693 \\
+	128 & 1.390360 \\
+	64 & 1.259533 \\
+	32 & 1.088204 \\
+	16 & 0.888889 \\
+	8 & 0.800000 \\
+	4 & 0.666667 \\
+	2 & 0.500000 \\
+}\compressionhumiditysnappy
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditysnappytrans{\compressionhumiditysnappy}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumiditysnappytrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.155789 \\
+	256 & 2.345934 \\
+	128 & 2.494519 \\
+	64 & 2.455635 \\
+	32 & 2.273030 \\
+	16 & 1.919400 \\
+	8 & 1.502568 \\
+	4 & 1.116685 \\
+	2 & 0.856545 \\
+}\compressionhumidityfpaq
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityfpaqtrans{\compressionhumidityfpaq}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumidityfpaqtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 3.407654 \\
+	256 & 3.047619 \\
+	128 & 2.608917 \\
+	64 & 2.162619 \\
+	32 & 1.702411 \\
+	16 & 1.230030 \\
+	8 & 0.830495 \\
+	4 & 0.529199 \\
+	2 & 0.326479 \\
+}\compressionhumidityppmsf
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityppmsftrans{\compressionhumidityppmsf}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumidityppmsftrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 3.453626 \\
+	256 & 3.079699 \\
+	128 & 2.632391 \\
+	64 & 2.155789 \\
+	32 & 1.681445 \\
+	16 & 1.218322 \\
+	8 & 0.823482 \\
+	4 & 0.526614 \\
+	2 & 0.326479 \\
+}\compressionhumidityppmst
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityppmsttrans{\compressionhumidityppmst}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumidityppmsttrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 3.663685 \\
+	256 & 3.255962 \\
+	128 & 2.775068 \\
+	64 & 2.243154 \\
+	32 & 1.725358 \\
+	16 & 1.246500 \\
+	8 & 0.840033 \\
+	4 & 0.537110 \\
+	2 & 0.322621 \\
+}\compressionhumidityppmso
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityppmsotrans{\compressionhumidityppmso}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumidityppmsotrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.314124 \\
+	256 & 2.120083 \\
+	128 & 1.880624 \\
+	64 & 1.671837 \\
+	32 & 1.438202 \\
+	16 & 1.207547 \\
+	8 & 1.018399 \\
+	4 & 0.739083 \\
+	2 & 0.500000 \\
+}\compressionhumiditylzw
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditylzwtrans{\compressionhumiditylzw}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumiditylzwtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.741633 \\
+	256 & 2.639175 \\
+	128 & 2.420804 \\
+	64 & 2.174098 \\
+	32 & 1.817214 \\
+	16 & 1.467049 \\
+	8 & 1.139043 \\
+	4 & 0.821500 \\
+	2 & 0.596215 \\
+}\compressionhumiditylzwmc
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditylzwmctrans{\compressionhumiditylzwmc}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumiditylzwmctrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.515914 \\
+	256 & 1.464950 \\
+	128 & 1.379125 \\
+	64 & 1.278402 \\
+	32 & 1.153803 \\
+	16 & 0.980843 \\
+	8 & 0.888889 \\
+	4 & 0.800000 \\
+	2 & 0.666667 \\
+}\compressionhumiditylzf
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditylzftrans{\compressionhumiditylzf}
+\pgfplotstablevertcat{\compressionhumiditycombined}{\compressionhumiditylzftrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.000000 \\
+	256 & 1.000000 \\
+	128 & 1.000000 \\
+	64 & 1.000000 \\
+	32 & 1.000000 \\
+	16 & 1.000000 \\
+	8 & 1.000000 \\
+	4 & 1.000000 \\
+	2 & 1.000000 \\
+}\compressionhumiditynoneencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditynoneencodedtrans{\compressionhumiditynoneencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumiditynoneencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.957935 \\
+	256 & 1.763997 \\
+	128 & 1.494891 \\
+	64 & 1.280000 \\
+	32 & 1.078462 \\
+	16 & 0.888889 \\
+	8 & 0.800000 \\
+	4 & 0.666667 \\
+	2 & 0.500000 \\
+}\compressionhumiditysnappyencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditysnappyencodedtrans{\compressionhumiditysnappyencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumiditysnappyencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 4.934940 \\
+	256 & 4.423326 \\
+	128 & 3.737226 \\
+	64 & 2.976744 \\
+	32 & 2.240700 \\
+	16 & 1.656958 \\
+	8 & 1.215430 \\
+	4 & 0.902998 \\
+	2 & 0.666667 \\
+}\compressionhumidityfpaqencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityfpaqencodedtrans{\compressionhumidityfpaqencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumidityfpaqencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 4.338983 \\
+	256 & 3.849624 \\
+	128 & 3.195008 \\
+	64 & 2.482424 \\
+	32 & 1.788646 \\
+	16 & 1.214709 \\
+	8 & 0.788602 \\
+	4 & 0.499878 \\
+	2 & 0.331499 \\
+}\compressionhumidityppmsfencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityppmsfencodedtrans{\compressionhumidityppmsfencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumidityppmsfencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 4.520971 \\
+	256 & 3.968992 \\
+	128 & 3.240506 \\
+	64 & 2.519065 \\
+	32 & 1.791776 \\
+	16 & 1.203998 \\
+	8 & 0.784074 \\
+	4 & 0.499878 \\
+	2 & 0.331499 \\
+}\compressionhumidityppmstencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityppmstencodedtrans{\compressionhumidityppmstencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumidityppmstencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 4.785047 \\
+	256 & 4.205339 \\
+	128 & 3.430486 \\
+	64 & 2.598985 \\
+	32 & 1.831843 \\
+	16 & 1.222687 \\
+	8 & 0.787692 \\
+	4 & 0.517041 \\
+	2 & 0.331499 \\
+}\compressionhumidityppmsoencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumidityppmsoencodedtrans{\compressionhumidityppmsoencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumidityppmsoencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 3.112462 \\
+	256 & 2.687664 \\
+	128 & 2.250549 \\
+	64 & 1.846709 \\
+	32 & 1.485134 \\
+	16 & 1.171625 \\
+	8 & 0.946833 \\
+	4 & 0.699454 \\
+	2 & 0.500000 \\
+}\compressionhumiditylzwencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditylzwencodedtrans{\compressionhumiditylzwencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumiditylzwencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 3.500855 \\
+	256 & 3.245642 \\
+	128 & 2.938307 \\
+	64 & 2.464501 \\
+	32 & 1.899814 \\
+	16 & 1.386594 \\
+	8 & 1.000489 \\
+	4 & 0.699454 \\
+	2 & 0.500000 \\
+}\compressionhumiditylzwmcencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditylzwmcencodedtrans{\compressionhumiditylzwmcencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumiditylzwmcencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.591298 \\
+	256 & 1.529500 \\
+	128 & 1.414365 \\
+	64 & 1.300317 \\
+	32 & 1.128375 \\
+	16 & 0.944214 \\
+	8 & 0.888889 \\
+	4 & 0.800000 \\
+	2 & 0.666667 \\
+}\compressionhumiditylzfencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionhumiditylzfencodedtrans{\compressionhumiditylzfencoded}
+\pgfplotstablevertcat{\compressionhumidityencodedcombined}{\compressionhumiditylzfencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.000000 \\
+	256 & 1.000000 \\
+	128 & 1.000000 \\
+	64 & 1.000000 \\
+	32 & 1.000000 \\
+	16 & 1.000000 \\
+	8 & 1.000000 \\
+	4 & 1.000000 \\
+	2 & 1.000000 \\
+}\compressiontemperaturenone
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturenonetrans{\compressiontemperaturenone}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperaturenonetrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.017893 \\
+	256 & 1.002938 \\
+	128 & 1.002447 \\
+	64 & 0.976168 \\
+	32 & 0.947709 \\
+	16 & 0.888889 \\
+	8 & 0.800000 \\
+	4 & 0.666667 \\
+	2 & 0.500000 \\
+}\compressiontemperaturesnappy
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturesnappytrans{\compressiontemperaturesnappy}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperaturesnappytrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.534082 \\
+	256 & 1.544495 \\
+	128 & 1.579029 \\
+	64 & 1.546828 \\
+	32 & 1.451453 \\
+	16 & 1.298668 \\
+	8 & 1.103448 \\
+	4 & 0.895888 \\
+	2 & 0.670596 \\
+}\compressiontemperaturefpaq
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturefpaqtrans{\compressiontemperaturefpaq}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperaturefpaqtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.626688 \\
+	256 & 1.544495 \\
+	128 & 1.464950 \\
+	64 & 1.336815 \\
+	32 & 1.164960 \\
+	16 & 0.947709 \\
+	8 & 0.711111 \\
+	4 & 0.503565 \\
+	2 & 0.332090 \\
+}\compressiontemperatureppmsf
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperatureppmsftrans{\compressiontemperatureppmsf}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperatureppmsftrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.629276 \\
+	256 & 1.547997 \\
+	128 & 1.465999 \\
+	64 & 1.335072 \\
+	32 & 1.163636 \\
+	16 & 0.947271 \\
+	8 & 0.710618 \\
+	4 & 0.503565 \\
+	2 & 0.332090 \\
+}\compressiontemperatureppmst
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperatureppmsttrans{\compressiontemperatureppmst}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperatureppmsttrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.631873 \\
+	256 & 1.558600 \\
+	128 & 1.482983 \\
+	64 & 1.349144 \\
+	32 & 1.172295 \\
+	16 & 0.953445 \\
+	8 & 0.717841 \\
+	4 & 0.504931 \\
+	2 & 0.332090 \\
+}\compressiontemperatureppmso
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperatureppmsotrans{\compressiontemperatureppmso}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperatureppmsotrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.157716 \\
+	256 & 1.138410 \\
+	128 & 1.092267 \\
+	64 & 1.022466 \\
+	32 & 0.961954 \\
+	16 & 0.904594 \\
+	8 & 0.833537 \\
+	4 & 0.676131 \\
+	2 & 0.500000 \\
+}\compressiontemperaturelzw
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturelzwtrans{\compressiontemperaturelzw}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperaturelzwtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.305290 \\
+	256 & 1.282405 \\
+	128 & 1.234479 \\
+	64 & 1.159027 \\
+	32 & 1.078462 \\
+	16 & 0.974774 \\
+	8 & 0.837628 \\
+	4 & 0.676577 \\
+	2 & 0.500733 \\
+}\compressiontemperaturelzwmc
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturelzwmctrans{\compressiontemperaturelzwmc}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperaturelzwmctrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.042770 \\
+	256 & 1.024512 \\
+	128 & 1.008867 \\
+	64 & 0.982254 \\
+	32 & 0.949467 \\
+	16 & 0.891986 \\
+	8 & 0.888889 \\
+	4 & 0.800000 \\
+	2 & 0.666667 \\
+}\compressiontemperaturelzf
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturelzftrans{\compressiontemperaturelzf}
+\pgfplotstablevertcat{\compressiontemperaturecombined}{\compressiontemperaturelzftrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.957935 \\
+	256 & 1.950476 \\
+	128 & 1.935728 \\
+	64 & 1.910448 \\
+	32 & 1.858439 \\
+	16 & 1.756432 \\
+	8 & 1.587597 \\
+	4 & 1.329870 \\
+	2 & 1.000000 \\
+}\compressiontemperaturenoneencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturenoneencodedtrans{\compressiontemperaturenoneencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperaturenoneencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.921201 \\
+	256 & 1.892791 \\
+	128 & 1.851718 \\
+	64 & 1.802817 \\
+	32 & 1.665041 \\
+	16 & 1.440225 \\
+	8 & 1.136515 \\
+	4 & 0.798752 \\
+	2 & 0.500000 \\
+}\compressiontemperaturesnappyencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturesnappyencodedtrans{\compressiontemperaturesnappyencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperaturesnappyencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.868347 \\
+	256 & 2.767568 \\
+	128 & 2.652850 \\
+	64 & 2.446834 \\
+	32 & 2.164905 \\
+	16 & 1.796491 \\
+	8 & 1.408528 \\
+	4 & 1.027597 \\
+	2 & 0.670596 \\
+}\compressiontemperaturefpaqencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturefpaqencodedtrans{\compressiontemperaturefpaqencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperaturefpaqencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.566416 \\
+	256 & 2.378630 \\
+	128 & 2.160338 \\
+	64 & 1.885820 \\
+	32 & 1.572965 \\
+	16 & 1.221957 \\
+	8 & 0.865230 \\
+	4 & 0.561250 \\
+	2 & 0.332090 \\
+}\compressiontemperatureppmsfencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperatureppmsfencodedtrans{\compressiontemperatureppmsfencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperatureppmsfencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.563204 \\
+	256 & 2.378630 \\
+	128 & 2.162619 \\
+	64 & 1.885820 \\
+	32 & 1.572965 \\
+	16 & 1.221957 \\
+	8 & 0.865230 \\
+	4 & 0.561250 \\
+	2 & 0.332090 \\
+}\compressiontemperatureppmstencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperatureppmstencodedtrans{\compressiontemperatureppmstencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperatureppmstencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.566416 \\
+	256 & 2.384168 \\
+	128 & 2.160338 \\
+	64 & 1.882353 \\
+	32 & 1.572965 \\
+	16 & 1.220501 \\
+	8 & 0.865596 \\
+	4 & 0.561096 \\
+	2 & 0.332090 \\
+}\compressiontemperatureppmsoencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperatureppmsoencodedtrans{\compressiontemperatureppmsoencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperatureppmsoencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.120083 \\
+	256 & 1.957935 \\
+	128 & 1.846709 \\
+	64 & 1.721008 \\
+	32 & 1.582689 \\
+	16 & 1.354497 \\
+	8 & 1.137778 \\
+	4 & 0.798752 \\
+	2 & 0.500000 \\
+}\compressiontemperaturelzwencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturelzwencodedtrans{\compressiontemperaturelzwencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperaturelzwencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 2.221258 \\
+	256 & 2.115702 \\
+	128 & 2.009814 \\
+	64 & 1.843384 \\
+	32 & 1.622821 \\
+	16 & 1.337688 \\
+	8 & 1.034866 \\
+	4 & 0.798441 \\
+	2 & 0.500733 \\
+}\compressiontemperaturelzwmcencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturelzwmcencodedtrans{\compressiontemperaturelzwmcencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperaturelzwmcencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.941232 \\
+	256 & 1.921201 \\
+	128 & 1.878899 \\
+	64 & 1.802817 \\
+	32 & 1.665041 \\
+	16 & 1.582689 \\
+	8 & 1.324709 \\
+	4 & 0.998051 \\
+	2 & 0.666667 \\
+}\compressiontemperaturelzfencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressiontemperaturelzfencodedtrans{\compressiontemperaturelzfencoded}
+\pgfplotstablevertcat{\compressiontemperatureencodedcombined}{\compressiontemperaturelzfencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.000000 \\
+	256 & 1.000000 \\
+	128 & 1.000000 \\
+	64 & 1.000000 \\
+	32 & 1.000000 \\
+}\compressionmixednone
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixednonetrans{\compressionmixednone}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixednonetrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.266543 \\
+	256 & 1.189315 \\
+	128 & 1.107626 \\
+	64 & 0.999024 \\
+	32 & 0.941176 \\
+}\compressionmixedsnappy
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedsnappytrans{\compressionmixedsnappy}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedsnappytrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.221957 \\
+	256 & 1.194866 \\
+	128 & 1.146697 \\
+	64 & 1.075066 \\
+	32 & 0.988894 \\
+}\compressionmixedfpaq
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedfpaqtrans{\compressionmixedfpaq}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedfpaqtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.751925 \\
+	256 & 1.595016 \\
+	128 & 1.377270 \\
+	64 & 1.115468 \\
+	32 & 0.877088 \\
+}\compressionmixedppmsf
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedppmsftrans{\compressionmixedppmsf}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedppmsftrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.759450 \\
+	256 & 1.598751 \\
+	128 & 1.375420 \\
+	64 & 1.110027 \\
+	32 & 0.877088 \\
+}\compressionmixedppmst
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedppmsttrans{\compressionmixedppmst}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedppmsttrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.706667 \\
+	256 & 1.564553 \\
+	128 & 1.358090 \\
+	64 & 1.114861 \\
+	32 & 0.875214 \\
+}\compressionmixedppmso
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedppmsotrans{\compressionmixedppmso}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedppmsotrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.411440 \\
+	256 & 1.292929 \\
+	128 & 1.152504 \\
+	64 & 1.005400 \\
+	32 & 0.865962 \\
+}\compressionmixedlzw
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedlzwtrans{\compressionmixedlzw}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedlzwtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.333333 \\
+	256 & 1.187935 \\
+	128 & 1.065557 \\
+	64 & 0.940744 \\
+	32 & 0.813344 \\
+}\compressionmixedlzwmc
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedlzwmctrans{\compressionmixedlzwmc}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedlzwmctrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.283208 \\
+	256 & 1.221228 \\
+	128 & 1.121577 \\
+	64 & 1.008370 \\
+	32 & 0.941176 \\
+}\compressionmixedlzf
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedlzftrans{\compressionmixedlzf}
+\pgfplotstablevertcat{\compressionmixedcombined}{\compressionmixedlzftrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.000000 \\
+	256 & 1.000000 \\
+	128 & 1.000000 \\
+	64 & 1.000000 \\
+	32 & 1.000000 \\
+}\compressionmixednoneencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixednoneencodedtrans{\compressionmixednoneencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixednoneencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.189315 \\
+	256 & 1.120963 \\
+	128 & 1.044898 \\
+	64 & 0.955224 \\
+	32 & 0.941176 \\
+}\compressionmixedsnappyencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedsnappyencodedtrans{\compressionmixedsnappyencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedsnappyencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.087626 \\
+	256 & 1.070010 \\
+	128 & 1.033300 \\
+	64 & 0.980373 \\
+	32 & 0.915921 \\
+}\compressionmixedfpaqencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedfpaqencodedtrans{\compressionmixedfpaqencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedfpaqencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.364424 \\
+	256 & 1.286432 \\
+	128 & 1.162976 \\
+	64 & 1.013861 \\
+	32 & 0.865596 \\
+}\compressionmixedppmsfencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedppmsfencodedtrans{\compressionmixedppmsfencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedppmsfencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.371735 \\
+	256 & 1.292114 \\
+	128 & 1.168283 \\
+	64 & 1.010360 \\
+	32 & 0.865596 \\
+}\compressionmixedppmstencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedppmstencodedtrans{\compressionmixedppmstencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedppmstencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.343832 \\
+	256 & 1.272840 \\
+	128 & 1.162976 \\
+	64 & 1.014364 \\
+	32 & 0.865596 \\
+}\compressionmixedppmsoencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedppmsoencodedtrans{\compressionmixedppmsoencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedppmsoencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.184500 \\
+	256 & 1.134626 \\
+	128 & 1.046500 \\
+	64 & 0.949907 \\
+	32 & 0.865230 \\
+}\compressionmixedlzwencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedlzwencodedtrans{\compressionmixedlzwencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedlzwencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.117294 \\
+	256 & 1.039066 \\
+	128 & 0.961954 \\
+	64 & 0.878970 \\
+	32 & 0.791957 \\
+}\compressionmixedlzwmcencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedlzwmcencodedtrans{\compressionmixedlzwmcencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedlzwmcencodedtrans}
+
+\pgfplotstableread[row sep=\\, col sep=&]{
+	packetsize & compression\\
+	512 & 1.201173 \\
+	256 & 1.149916 \\
+	128 & 1.072813 \\
+	64 & 0.990808 \\
+	32 & 0.941176 \\
+}\compressionmixedlzfencoded
+\pgfplotstabletranspose[colnames from=packetsize]\compressionmixedlzfencodedtrans{\compressionmixedlzfencoded}
+\pgfplotstablevertcat{\compressionmixedencodedcombined}{\compressionmixedlzfencodedtrans}
+
